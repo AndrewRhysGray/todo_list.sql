@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 12, 2024 at 10:48 PM
+-- Generation Time: Feb 13, 2024 at 07:22 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -46,6 +46,24 @@ CREATE TABLE `comments` (
   `negatives` varchar(255) DEFAULT NULL,
   `reassigns` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `comments`
+--
+
+INSERT INTO `comments` (`commentsID`, `positives`, `negatives`, `reassigns`) VALUES
+(1, 'great work', 'bad work', 'make this for next monday'),
+(2, 'epic', 'epic fail', 'epic but Ill do it next week'),
+(3, 'excellent', 'disappointing', 'in four weeks'),
+(4, 'amazing', 'terrible', 'in five weeks'),
+(5, 'outstanding', 'horrible', 'in six weeks'),
+(6, 'brilliant', 'awful', 'in seven weeks'),
+(7, 'superb', 'dreadful', 'in eight weeks'),
+(8, 'great', 'poor', 'in nine weeks'),
+(9, 'wonderful', 'unsatisfactory', 'in ten weeks'),
+(10, 'fantabulous', 'subpar', 'in eleven weeks'),
+(11, 'splendid', 'inferior', 'in twelve weeks'),
+(12, 'marvelous', 'displeasing', 'in thirteen weeks');
 
 -- --------------------------------------------------------
 
@@ -126,7 +144,7 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `commentsID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `commentsID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `tasks`
